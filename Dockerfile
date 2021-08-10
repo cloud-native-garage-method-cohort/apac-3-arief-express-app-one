@@ -1,4 +1,4 @@
-FROM quay.io/repository/ibmgaragecloud/node:lts-stretch as build
+FROM quay.io/ibmgaragecloud/node:lts-stretch
 WORKDIR /app
 COPY . .
 RUN npm install
