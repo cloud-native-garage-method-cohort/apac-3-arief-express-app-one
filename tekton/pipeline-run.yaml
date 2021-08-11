@@ -1,3 +1,4 @@
+---
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
@@ -8,6 +9,8 @@ spec:
       value: https://github.com/cloud-native-garage-method-cohort/apac-3-arief-express-app-one
     - name: image-repo
       value: quay.io/arief_hidayat/express-sample-app
+    - name: app-name
+      value: express-sample-app
   serviceAccountName: build-bot
   pipelineRef:
     name: nodejs-pipeline
